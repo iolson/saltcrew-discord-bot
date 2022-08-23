@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'gg.saltcrew.discord'
+version '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = '1.11'
+targetCompatibility = '1.11'
+
+dependencies {
+    implementation("org.javacord:javacord:+")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass.set("gg.saltcrew.discord.Saltcrew")
+}
